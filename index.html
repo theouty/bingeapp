@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Shitty Netflix</title>
+    <title>BINGE TV APP</title>
     <link rel="stylesheet" href="index.css" />
     <script defer type="text/javascript" src="index.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -11,10 +11,15 @@
 
   </head>
   <body>
-    <button id="logout"> LOGOUT</button>
     <div class="hero">
       <div class="container">
       <div class="row">
+        <div class="col-md-12">
+  
+          <a class="button"  href="">
+            <img class= "logout-icon"src= "img/logout.png">
+        </a>
+        </div>
         <div class="col-md-12 logo">
           <img src="img\logo.png" alt="Logo TV Binge App">
         </div>
@@ -76,7 +81,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <button id="my-shows"> <img src="img\back.png" alt=""> My Shows</button>
+            <button id="my-shows"> My Shows</button>
           </div>
         </div>
       </div>
@@ -132,12 +137,12 @@
       
       <div class="card card-body" id="all-informations">
         <div class="col-sm-6 informations-one">
-          <h3>The Office</h3>
-          <h6>BBC two - 2011</h6>
-          <img src="img\seo-and-web.png" alt="">
+          <h3 id="showName">The Office</h3>
+          <h6 id="showNetwork">BBC two - 2011</h6>
+          <img id="showImage"src="img\seo-and-web.png" alt="">
           <h6>18555</h6>
         </div>
-        <div class="col-sm-12">
+        <div class="col-sm-12" id="showSummary">
           <p>Rachel Green, Ross Geller, Monica Geller, Joey Tribbiani, Chandler Bing and Phoebe Buffay are all friends, living off of one another in the heart of New York City. Over the course of ten years, this average group of buddies goes through massive mayhem, family  trouble, past and future romances, fights, laughs, tears and surprises as they learn what it really means to be a friend.</p>
         </div>
         <div class="col-sm-6 tableinformation">
@@ -145,25 +150,13 @@
             <tbody>
               <tr>
                 <th scope="row">Aired</th>
-                <td>222</td>
+                <td id="showAired">222</td>
               </tr>
               <tr>
                 <th scope="row">Status</th>
-                <td>Ended</td>
+                <td id="showStatus">Ended</td>
               </tr>
-              <tr>
-                <th scope="row">Content Rating</th>
-                <td>TV-MA</td>  
-              </tr>
-              <tr>
-                <th scope="row">Country</th>
-                <td>US</td>  
-              </tr>
-              <tr>
-                <th scope="row">Runtime</th>
-                <td>25</td>  
-              </tr>
-            </tbody>
+             </tbody>
           </table>
         </div>
         <div class="select-season">
@@ -189,34 +182,7 @@
         </div>
         
           <div class="container">
-            <div class="row">
-              <div class="col-md-3 " id="episodeee">
-                <div class="container-fluid">
-                  <div class="row">
-                    <!-- <div class="col-md-12 episode-image">
-                      <img src="img\friends.png" alt="">
-                    </div> -->
-                    <div class="container information-episode">
-                      <div class="row">
-    
-                     
-                    <div class="col-md-9 episode-title" >
-                      <h5>2x1 - The One After The Super Bowl (1)</h5>
-                      <h6>21:00 Thursday Feb 22, 1996</h6>
-                    </div>
-                    <div class="col-md-3 watched">
-                         <a href="#">
-                          <img src="img\interface (1).png" alt="">
-                        </a>
-                                                 
-                    </div>
-                  </div>
-                </div>
-                
-                  </div>
-                </div>
-            
-              </div>
+            <div id="episodeRow" class="row">
             </div>
           </div>
         
@@ -236,3 +202,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
+
