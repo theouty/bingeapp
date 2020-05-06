@@ -1,3 +1,4 @@
+console.log('test')
 const searchForm = document.getElementsByClassName("input-group")[0]
 const myshowbtn= document.getElementById("my-shows")
 const parent = document.getElementById("show")
@@ -5,7 +6,9 @@ const searchResults = document.getElementsByClassName("div search-result")[0]
 const logoutbtn=document.getElementsByClassName("logout-icon")[0]
 const collapseParent = document.getElementById("collapseExample")
 
+
 showUserShows()
+
 
 myshowbtn.addEventListener("click", () => {
   collapseParent.classList.add('hidden')
@@ -207,7 +210,10 @@ episodes.forEach(ep => {
 start()
 function start() {
 //IF NOT SIGNED IN SHOW LOGIN HTML
+
 if (!sessionStorage.getItem("user")){
+  console.log('asdf')
+  document.location.href = "login.html";
   let body=document.getElementsByTagName('body')[0]
   body.innerText=""
   let loginbtn=document.createElement('button')
@@ -295,7 +301,7 @@ function changeWelcome(){
 })
 }
 
-const collapseParent = document.getElementById("collapseExample")
+// const collapseParent = document.getElementById("collapseExample")
 const epiDiv = document.getElementById("episodeee")
 
 function buildShowCard(show) {
