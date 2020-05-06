@@ -11,7 +11,7 @@
 # u3= User.create(username: "Aman", location: "Seattle", score: 0)
 # u4= User.create(username: "Will", location: "Seattle", score: 0)
 # u3= User.create(username: "Aman", location: "Seattle", score: 0)
-u4= User.create(username: "Will", location: "Seattle", score: 0)
+# u4= User.create(username: "Will", location: "Seattle", score: 0)
 
 res = RestClient.get("http://api.tvmaze.com/shows/526")
 show = JSON.parse(res.body)

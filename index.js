@@ -253,6 +253,19 @@ logoutbtn.addEventListener("click", () => {
   location.reload()
 } 
 )
+//change welcome and tv-following count
+let welcomeUser = document.getElementById(773)
+let followerCount = document.getElementById(584)
+changeWelcome()
+function changeWelcome(){
+  fetch(`http://localhost:8008/users/${sessionStorage.getItem("user")}`)
+  .then(resp=> resp.json())
+  .then(user=>{
+  welcomeUser.innerHTML = `<h1> Hello, ${(user.username).charAt(0).toUpperCase() + (user.username).slice(1)}!</h1>`
+  followerCount.innerHTML = `<h2>${user.shows.length}</h2>`
+})
+}
+
 const collapseParent = document.getElementById("collapseExample")
 const epiDiv = document.getElementById("episodeee")
 
