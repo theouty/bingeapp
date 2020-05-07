@@ -321,15 +321,13 @@ function buildBetterEpisodeCards(episodes, season) {
 
   
     })
-    // let statusbar= document.createElement('div')
-    // statusbar.className='progress-bar'
-    // statusbar.innerHTML=`<div class="bar positive">
-    //   <span>50%</span>
-    // </div>
-    // <div class="bar negative">
-    //   <span>50%</span>
-    // </div>`
-    //   collapseParent.prepend(statusbar)
+    let percent=(counter/(episodes.length))*100
+    let statusbar= document.createElement('div')
+    statusbar.innerHTML=`<div class="progress-wrap progress" data-progress-percent="">
+    <div class="progress-bar progress" style="height:24px;width:${percent}%"></div>
+  </div>`
+
+      collapseParent.prepend(statusbar)
   })
 
 }
@@ -377,10 +375,15 @@ function start() {
             <div class="col-lg-12 login-title">
               WELCOME TO BINGE!
             </div>
+<<<<<<< HEAD
 
             <div class="col-lg-12 login-form">
                 <div class="col-lg-12 login-form">                        
 
+=======
+            <div class="col-lg-12 login-form">
+                <div class="col-lg-12 login-form">                        
+>>>>>>> b1ced56f1b7de9f14c4ed2af63cd5c94e87cac72
                         <div class="col-lg-12 loginbttm">
                             <div class="col-lg-6 login-btm login-text">
                                 <!-- Error Message -->
@@ -390,7 +393,10 @@ function start() {
                                 <button class="btn btn-outline-primary">LOGIN</button>
                             </div>
                         </div>
+<<<<<<< HEAD
                     
+=======
+>>>>>>> b1ced56f1b7de9f14c4ed2af63cd5c94e87cac72
                 </div>
             </div>
             <div class="col-lg-3 col-md-2"></div>
@@ -402,7 +408,6 @@ function start() {
     signupbtn.addEventListener('click', ()=> signuporlogin(event, true))
     loginbtn.addEventListener('click', ()=> signuporlogin(event, false))
   }
-  
   //SIGN UP
     function signuporlogin(event, signup){
       let body=document.getElementsByTagName('body')[0]
@@ -416,7 +421,10 @@ function start() {
               <div class="col-lg-12 login-title">
                 WELCOME TO BINGE!
               </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> b1ced56f1b7de9f14c4ed2af63cd5c94e87cac72
               <div class="col-lg-12 login-form">
                   <div class="col-lg-12 login-form">
                       <form>
@@ -428,7 +436,10 @@ function start() {
                               <label class="form-control-label">LOCATION</label>
                               <input type="text" class="form-control" id="input-login" name="location">
                           </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> b1ced56f1b7de9f14c4ed2af63cd5c94e87cac72
                           <div class="col-lg-12 loginbttm">
                               <div class="col-lg-6 login-btm login-text">
                                   <!-- Error Message -->
