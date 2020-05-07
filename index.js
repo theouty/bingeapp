@@ -375,15 +375,8 @@ function start() {
             <div class="col-lg-12 login-title">
               WELCOME TO BINGE!
             </div>
-<<<<<<< HEAD
-
             <div class="col-lg-12 login-form">
                 <div class="col-lg-12 login-form">                        
-
-=======
-            <div class="col-lg-12 login-form">
-                <div class="col-lg-12 login-form">                        
->>>>>>> b1ced56f1b7de9f14c4ed2af63cd5c94e87cac72
                         <div class="col-lg-12 loginbttm">
                             <div class="col-lg-6 login-btm login-text">
                                 <!-- Error Message -->
@@ -393,10 +386,6 @@ function start() {
                                 <button class="btn btn-outline-primary">LOGIN</button>
                             </div>
                         </div>
-<<<<<<< HEAD
-                    
-=======
->>>>>>> b1ced56f1b7de9f14c4ed2af63cd5c94e87cac72
                 </div>
             </div>
             <div class="col-lg-3 col-md-2"></div>
@@ -421,10 +410,6 @@ function start() {
               <div class="col-lg-12 login-title">
                 WELCOME TO BINGE!
               </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> b1ced56f1b7de9f14c4ed2af63cd5c94e87cac72
               <div class="col-lg-12 login-form">
                   <div class="col-lg-12 login-form">
                       <form>
@@ -436,10 +421,6 @@ function start() {
                               <label class="form-control-label">LOCATION</label>
                               <input type="text" class="form-control" id="input-login" name="location">
                           </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> b1ced56f1b7de9f14c4ed2af63cd5c94e87cac72
                           <div class="col-lg-12 loginbttm">
                               <div class="col-lg-6 login-btm login-text">
                                   <!-- Error Message -->
