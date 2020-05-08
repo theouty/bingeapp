@@ -89,7 +89,7 @@ function makeCard(title) {
   follow.addEventListener('click', event => handleFollow(event, title))
 }
 
-function handleFollow(e,object){ 
+function handleFollow(e,object){
   let data ={ "user_id": sessionStorage.getItem("user"),
                   "api_id": object.show.id,
                   "title": object.show.name
@@ -490,9 +490,10 @@ function start() {
   } 
   )
 
-  //change welcome and tv-following count
+//change welcome and tv show following episodes watched count 
 let welcomeUser = document.getElementById(773)
 let followerCount = document.getElementById(584)
+let watchedNum = document.getElementById(395)
 changeWelcome()
 function changeWelcome(){
   fetch(`http://localhost:8008/users/${sessionStorage.getItem("user")}`)
@@ -500,5 +501,11 @@ function changeWelcome(){
   .then(user=>{
   welcomeUser.innerHTML = `<h1> Hello, ${(user.username).charAt(0).toUpperCase() + (user.username).slice(1)}!</h1>`
   followerCount.innerHTML = `<h2>${user.shows.length}</h2>`
+})
+
+fetch(`http://localhost:8008/user_episodes/${sessionStorage.getItem("user")}`)
+.then(resp => resp.json())
+.then(data=> {
+  watchedNum.innerHTML = `<h2>${data.length}</h2>`
 })
 }
